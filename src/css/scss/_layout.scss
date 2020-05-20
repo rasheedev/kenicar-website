@@ -395,10 +395,10 @@
   width: 40px;
   z-index: 10000;
   border-radius: 50%;
-  background-color: $main-color;
+  background-color: darken(#353d48, 5);
   display: none;
   &:hover {
-    background-color: $main-hover-color;
+    background-color: darken(#353d48, 8);
   }
   i {
     color: #fff;
