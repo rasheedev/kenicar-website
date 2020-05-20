@@ -152,6 +152,11 @@
       margin-bottom: 60px;
       padding-bottom: 50px;
       border-bottom: 1px solid #e8e8e8;
+      position: relative;
+      span {
+        position:absolute; 
+        top:-130px;
+      }
       &:last-child {
         margin-bottom: 0;
         padding-bottom: 0;
@@ -175,7 +180,6 @@
     }
   }
 }
-
 @media (max-width: 991.98px) {
   .services-page {
     .services-page-img {
@@ -223,6 +227,16 @@
     .contact-form {
       margin-top: -20px;
     }
+  }
+}
+
+/* Google Map */
+.map {
+  height: 550px;
+  line-height: 0;
+  iframe {
+    height: 100%;
+    width: 100%;
   }
 }
 
@@ -291,15 +305,6 @@
         }
       }
     }
-  }
-}
-
-.map {
-  height: 550px;
-  line-height: 0;
-  iframe {
-    height: 100%;
-    width: 100%;
   }
 }
 
