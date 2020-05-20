@@ -1,0 +1,104 @@
+- var whatPage = "index";
+
+<!DOCTYPE html>
+html(lang="en")
+
+    head
+
+        include includes/head.pug
+  
+    body
+
+        //- Preloader
+        div(id="preloader")
+            div(class="spinner")
+
+        //- Navbar
+        include sections/navbar.pug
+
+        // Hero Section
+        section(class="hero bg-image")
+          div(class="container")
+            div(class="hero-flex")
+              div(class="hero-content")
+                h1 
+                  span Kenicar 
+                  | votre agence de location de voiture
+                div(class="hero-contact-details")
+                  p 
+                    span Kenicar  
+                    | vous propose des offres de location et de services qui répondent à vos besoins. Veuillez nous contacter sur :
+                  ul(class="list-unstyled")
+                    li 
+                      i(class="fa fa-phone")
+                      span Mobile : +212 6 61 29 05 13
+                    li 
+                      i(class="fa fa-phone")
+                      span Mobile : +212 6 61 19 71 03
+                    li 
+                      i(class="fa fa-phone")
+                      span Mobile : +212 6 61 33 69 59
+                    li(class="address")
+                      i(class="fa fa-home")
+                      span 41 Angle Avenue Moulay Abderrahmane et Rue Hassan Ibn Tabit, Bureau 1, Kenitra.
+                div(class="hero-links")
+                  a(href="vehicules.html" class="btn btn-custom") Nos Véhicules
+                  div(class="social")
+                    a(href="#")
+                      i(class="fa fa-facebook")
+                    a(href="#")
+                      i(class="fa fa-youtube")
+
+        // About Section
+        section(class="about section")
+          div(class="container")
+            div(class="section-title")
+              h2 A Propos de Kenicar
+              span(class="section-title-divider")
+            div(class="row justify-content-center")
+              div(class="col-lg-10")
+                div(class="about-content")
+                  p KENICAR est une agence de location de voitures à Kenitra au Maroc qui met à votre disposition des formules de location courtes, moyennes et longue durées à des prix très compétitifs; Vous souhaitez louer en toute simplicité une voiture récente et ce, à un prix très compétitif, vous êtes à la bonne adresse. KENI-CAR s’est donnée comme priorité la qualité de service et la satisfaction de ses clients et met en œuvre tout son savoir-faire et son expérience pour vous offrir un service de qualité adapté à vos besoins, vos exigences et votre budget. Depuis son lancement, KENI-CAR a beaucoup évolué. Mais le concept de l'entreprise reste identique : grâce à KENI-CAR, les clients partent en toute liberté sur la route de leurs vacances.
+
+        // Services Section
+        section(class="services bg-light section")
+          div(class="container")
+            div(class="section-title")
+              h2 Nos Services
+              span(class="section-title-divider")
+            div(class="services-wrap")
+              div(class="row justify-content-center")
+                div(class="col-lg-4 col-md-6")
+                  div(class="single-service")
+                    a(href="services.html#chauffeur")
+                      img(src="img/services/1.jpg" class="img-fluid")
+                      h4 Location de Voiture avec Chauffeur
+                div(class="col-lg-4 col-md-6")
+                  div(class="single-service")
+                    a(href="services.html#aeroport")
+                      img(src="img/services/2.jpg" class="img-fluid")
+                      h4 Transfert aux Aéroports du Maroc
+                div(class="col-lg-4 col-md-6")
+                  div(class="single-service")
+                    a(href="services.html#touristique")
+                      img(src="img/services/3.jpg" class="img-fluid")
+                      h4 Transport Touristique de Circuit
+                div(class="col-lg-4 col-md-6")
+                  div(class="single-service")
+                    a(href="services.html#mariage")
+                      img(src="img/services/4.jpg" class="img-fluid")
+                      h4 Location Voitures Mariages
+                div(class="col-lg-4 col-md-6")
+                  div(class="single-service")
+                    a(href="services.html#longue-duree")
+                      img(src="img/services/5.jpg" class="img-fluid")
+                      h4 Location Voitures Longue Durée (LLD)
+
+        //- Vehicules Slider Section
+        include sections/vehicles-slider.pug
+        
+        //- Footer
+        include sections/footer.pug
+
+        // Scripts
+        include includes/scripts.pug

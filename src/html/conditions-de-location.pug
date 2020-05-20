@@ -1,0 +1,59 @@
+- var whatPage = "conditions-de-location"; 
+
+<!DOCTYPE html>
+html(lang="en")
+
+    head
+
+        include includes/head.pug
+  
+    body
+
+        //- Preloader
+        div(id="preloader")
+            div(class="spinner")
+
+        //- Navbar
+        include sections/navbar.pug
+
+        // Title Section
+        section(class="page-title")
+            div(class="container")
+                div(class="page-title-content")
+                    h2 Conditions de Location
+        
+        // Conditions Section
+        section(class="conditions-page bg-light")
+            div(class="container")
+                div(class="conditions-wrap")
+                    div(class="item")
+                        h2 Le conducteur:
+                        p Le conducteur désigné au contrat doit être âgé de plus de 21 ans. Il doit être également titulaire, depuis au moins une année, d’un permis de conduire en cours de validité. Cela doit être justifié par des documents originaux.
+                        p Si un second conducteur est demandé, celui/celle-ci doit être présent(e) au moment du départ et présenter l’original de son permis de conduire ainsi qu’une carte d’identité ou un passeport.
+                        p Seuls les conducteurs identifiés sur le contrat de location sont autorisés à conduire le véhicule loué.
+                    div(class="item")
+                        h2 Durée de la location:
+                        p La durée de location se calcule par tranche de 24 heures non fractionnable, depuis l’heure de mise à disposition du véhicule.
+                        p Le locataire s’engage à restituer le véhicule au loueur à la date prévue au contrat de location, si vous souhaitez le conserver au-delà de cette date il vous appartiendra de demander une prolongation au loueur.
+                    div(class="item")
+                        h2 Paiement:
+                        p Le règlement du coût de location peut se faire en espèce, par virement Swift ou par carte de crédit.
+                        p Nos tarifs comprennent Le kilométrage illimité, les lubrifiants et l’entretien du véhicule.
+                        p Nos tarifs sont exprimés en MAD ou EUR.
+                    div(class="item")
+                        h2 Livraison / Récupération:
+                        p KENI-CAR vous laisse le choix de l’endroit ou vous voulez prendre ou rendre le véhicule (Aéroport, Hôtels, Gares…etc.)    
+                        p L’utilisation des véhicules sur les routes non goudronnées (piste) est interdite.
+                        p Le conducteur est seul responsable des délits et contraventions de la circulation routière.
+                    div(class="item")
+                        h2 Assurances:
+                        p Les véhicules sont assurés tout risques. Toutefois, pour tout dégât autre que le vol du véhicule, incendie, bris de glace, responsabilité civile et personnes transportées (PAI), une franchise non rachetable plafonnée reste à la charge du conducteur dans le cas ou sa responsabilité partielle ou entière serait engagée. Pour tout accident, un constat est obligatoire.
+
+        //- Vehicules Slider Section
+        include sections/vehicles-slider.pug
+        
+        //- Footer
+        include sections/footer.pug
+
+        // Scripts
+        include includes/scripts.pug

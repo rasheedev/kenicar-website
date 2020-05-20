@@ -1,0 +1,96 @@
+- var whatPage = "vehicule";
+
+<!DOCTYPE html>
+html(lang="en")
+
+    head
+
+        include includes/head.pug
+  
+    body
+
+        //- Preloader
+        div(id="preloader")
+            div(class="spinner")
+
+        //- Navbar
+        include sections/navbar.pug
+
+        // Vehicule Page
+        section(class="vehicule-page")
+          section(class="vehicule-page-img bg-image")
+          section(class="vehicule-page-content bg-light")
+            div(class="container")
+              div(class="vehicule-page-wrap")
+                div(class="row")
+
+                  div(class="col-lg-6")
+                    div(class="reservation-item")
+                      h2 Dacia Logan
+                      img(src="img/vehicules/5.png")
+                      div(class="price")
+                        h5 A partir de 250 MAD
+
+                      div(class="options")
+                        div(class="option")
+                          div(class="row")
+                            div(class="col-sm-6")
+                              div(class="item")
+                                i(class="fa fa-users")
+                                h6 Nombre de passagers : 
+                                  span 5
+                            div(class="col-sm-6")
+                              div(class="item")
+                                i(class="fa fa-suitcase")
+                                h6 Nombre de valises : 
+                                  span 3
+                        div(class="option")
+                          div(class="row")
+                            div(class="col-sm-6")
+                              div(class="item")
+                                i(class="fa fa-refresh")
+                                h6 Type de transmission : 
+                                  span manuelle
+                            div(class="col-sm-6")
+                              div(class="item")
+                                i(class="fa fa-snowflake-o")
+                                h6 Air conditionné : 
+                                  span oui
+
+                  div(class="col-lg-6 pl-lg-5")
+                    div(class="section-title")
+                      h2 Réservation
+                      span(class="section-title-divider")
+                    div(class="reservation-form")
+                      form(action="#")
+                        div(class="form-group")
+                          label(for="name") Nom & Prénom 
+                            span *
+                          input(type="text" class="form-control" id="name")
+                        div(class="form-group")
+                          label(for="email") Votre E-Mail 
+                            span *
+                          input(type="email" class="form-control" id="email")
+                        div(class="form-group")
+                          label(for="subject") Téléphone 
+                            span *
+                          input(type="text" class="form-control" id="subject")
+                        div(class="form-row")
+                          div(class="form-group col-md-6")
+                            label(for="date-recepion") Date de réception 
+                              span *
+                            input(type="date" class="form-control" id="date-recepion")
+                          div(class="form-group col-md-6")
+                            label(for="date-retour") Date de retour 
+                              span *
+                            input(type="date" class="form-control" id="date-retour")
+                        button(type="submit" name="reserver" class="btn btn-custom") Réserver
+
+        //- Vehicules Slider Section
+        include sections/vehicles-slider.pug
+
+        //- Footer
+        include sections/footer.pug
+
+        // Scripts
+        include includes/scripts.pug

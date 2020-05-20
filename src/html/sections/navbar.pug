@@ -1,0 +1,44 @@
+// Navbar
+nav(class="navbar navbar-expand-lg fixed-top")
+    div(class="container")
+        a(class="navbar-brand" href="index.html")
+            img(src="img/kenicar-logo.png")
+        button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation")
+            i(class="fa fa-bars")
+        div(class="collapse navbar-collapse" id="navbarText")
+            ul(class="navbar-nav ml-auto")
+
+                if whatPage == "index"
+                    li(class="nav-item active")
+                        a(class="nav-link" href="index.html") Accueil
+                else
+                    li(class="nav-item")
+                        a(class="nav-link" href="index.html") Accueil
+
+                if whatPage == "services"
+                    li(class="nav-item active")
+                        a(class="nav-link" href="services.html") Nos Services 
+                else
+                    li(class="nav-item")
+                        a(class="nav-link" href="services.html") Nos Services 
+
+                if whatPage == "vehicules" || whatPage == "vehicule"
+                    li(class="nav-item active")
+                        a(class="nav-link" href="vehicules.html") Nos Véhicules
+                else
+                    li(class="nav-item")
+                        a(class="nav-link" href="vehicules.html") Nos Véhicules
+                
+                if whatPage == "conditions-de-location"
+                    li(class="nav-item active")
+                        a(class="nav-link" href="conditions-de-location.html") Condition de Location
+                else
+                    li(class="nav-item")
+                        a(class="nav-link" href="conditions-de-location.html") Condition de Location
+                
+                if whatPage == "contact"
+                    li(class="nav-item active")
+                        a(class="nav-link" href="contact.html") Contact
+                else
+                    li(class="nav-item")
+                        a(class="nav-link" href="contact.html") Contact
